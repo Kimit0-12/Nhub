@@ -2,29 +2,30 @@
 
 import { useState } from "react";
 import type { CSSProperties } from "react";
+import { useI18n } from "./i18n";
 
 const demoModes = {
   focus: {
-    eyebrow: "Focus actual",
+    eyebrow: "currentFocus",
     value: "25:00",
-    label: "Tiempo restante",
-    helper: "Sesión 1/3 · Portfolio",
+    label: "timeLeft",
+    helper: "focusHelper",
     progress: "74%",
     accent: "green",
   },
   break: {
-    eyebrow: "Pitipausa lista",
+    eyebrow: "breakReady",
     value: "10:00",
-    label: "Descanso ganado",
-    helper: "Respira. NHub se ocupa del reloj.",
+    label: "earnedBreak",
+    helper: "breakHelper",
     progress: "100%",
     accent: "wine",
   },
   reward: {
-    eyebrow: "Recompensa",
+    eyebrow: "reward",
     value: "+20",
-    label: "Canutimonedas",
-    helper: "Por completar tu pitipausa.",
+    label: "coins",
+    helper: "rewardHelper",
     progress: "88%",
     accent: "gold",
   },
@@ -33,12 +34,13 @@ const demoModes = {
 type DemoMode = keyof typeof demoModes;
 
 export default function FocusDemo() {
+  const { t } = useI18n();
   const [mode, setMode] = useState<DemoMode>("focus");
   const active = demoModes[mode];
 
   return (
     <div className={`demo-card demo-${active.accent}`}>
-      <div className="demo-tabs" aria-label="Cambiar momento de la sesión">
+      <div className="demo-tabs" aria-label={t("changeMoment")}>
         {(["focus", "break", "reward"] as DemoMode[]).map((item) => (
           <button
             key={item}
@@ -47,26 +49,26 @@ export default function FocusDemo() {
             onClick={() => setMode(item)}
           >
             {item === "focus"
-              ? "Focus"
+              ? t("focus")
               : item === "break"
-                ? "Pitipausa"
-                : "Premio"}
+                ? t("breakTab")
+                : t("rewardTab")}
           </button>
         ))}
       </div>
 
       <div className="demo-screen" aria-live="polite">
-        <p>{active.eyebrow}</p>
+        <p>{t(active.eyebrow)}</p>
         <div
           className="demo-ring"
           style={{ "--demo-progress": active.progress } as CSSProperties}
         >
           <strong>{active.value}</strong>
-          <span>{active.label}</span>
+          <span>{t(active.label)}</span>
         </div>
         <div className="demo-helper">
           <span aria-hidden="true">✓</span>
-          {active.helper}
+          {t(active.helper)}
         </div>
       </div>
     </div>
