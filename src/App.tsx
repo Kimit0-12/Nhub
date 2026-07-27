@@ -103,7 +103,7 @@ export default function Home() {
             </div>
             <div>
               <span className="mini-label">{t("coins")}</span>
-              <strong>+20</strong>
+              <strong>−20</strong>
             </div>
           </div>
 

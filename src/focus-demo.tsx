@@ -23,7 +23,7 @@ const demoModes = {
   },
   reward: {
     eyebrow: "reward",
-    value: "+20",
+    value: "−20",
     label: "coins",
     helper: "rewardHelper",
     progress: "88%",
