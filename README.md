@@ -4,7 +4,21 @@ A playful productivity app built around focus, proper breaks, and rewards that a
 
 🌐 **[Visit the live NHub website →](https://nhub-app.pages.dev/)**
 
-[![NHub website preview](./Portada.png)](https://nhub-app.pages.dev/)
+[![NHub website preview in English](./portada-en.png)](https://nhub-app.pages.dev/)
+
+<details>
+<summary>🇪🇸 View the Spanish version</summary>
+
+[![NHub website preview in Spanish](./portada-es.png)](https://nhub-app.pages.dev/)
+
+</details>
+
+<details>
+<summary>🇮🇹 View the Italian version</summary>
+
+[![NHub website preview in Italian](./portada-it.png)](https://nhub-app.pages.dev/)
+
+</details>
 
 NHub started as a tool I wanted for myself. The idea was simple: make focus sessions easier to start, let break time have some value, and turn progress into something visible instead of another boring checklist.
 
