@@ -1,65 +1,76 @@
-# NHub
+<p align="center">
+  <img src="./assets/banner.svg" alt="NHub — playful productivity" width="100%">
+</p>
 
-A playful productivity app built around focus, proper breaks, and rewards that actually feel earned.
+<p align="center">
+  <a href="https://nhub-app.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE_SITE-f68a30?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Open the live NHub site"></a>
+</p>
 
-🌐 **[Visit the live NHub website →](https://nhub-app.pages.dev/)**
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Cloudflare_Pages-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare Pages">
+</p>
 
 [![NHub website preview in English](./portada-en.png)](https://nhub-app.pages.dev/)
 
+NHub turns productivity into a small world of its own: focus when it matters, take a proper break, earn visible progress and let **Canutín** make the whole thing feel a little less serious.
+
+## What makes NHub different
+
+| System | Purpose |
+| --- | --- |
+| **Focus sessions** | Make starting easier and keep attention on one clear goal. |
+| **Pitipausas** | Give breaks a real place in the workflow instead of treating them as failure. |
+| **Canutimonedas** | Turn consistent effort into rewards you can see and use. |
+| **Canutín** | Bring personality, accessories and a sense of progression to the experience. |
+
+## Explore it in your language
+
 <details>
-<summary>🇪🇸 View the Spanish version</summary>
+<summary><strong>🇪🇸 Vista en español</strong></summary>
 
 [![NHub website preview in Spanish](./portada-es.png)](https://nhub-app.pages.dev/)
 
 </details>
 
 <details>
-<summary>🇮🇹 View the Italian version</summary>
+<summary><strong>🇮🇹 Anteprima in italiano</strong></summary>
 
 [![NHub website preview in Italian](./portada-it.png)](https://nhub-app.pages.dev/)
 
 </details>
 
-NHub started as a tool I wanted for myself. The idea was simple: make focus sessions easier to start, let break time have some value, and turn progress into something visible instead of another boring checklist.
-
-It slowly grew into its own little world, with tasks, Focus sessions, flexible Pitipausas, Canutimonedas, unlockable rewards, different styles, and **Canutín** keeping the whole thing together.
-
 ## About this repository
 
-This repository contains NHub's public landing page, not the source code of the mobile app.
-
-The website includes:
+This repository contains NHub's **public landing page**, including:
 
 - An interactive Focus demo
-- A look at NHub's task, break, and reward systems
-- A preview of Canutín's accessories and styles
-- A responsive design for desktop and mobile
+- Previews of tasks, breaks and reward systems
+- Canutín's accessories and visual styles
+- Responsive layouts for desktop and mobile
+- English, Spanish and Italian presentations
 
-## Built with
-
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Cloudflare Pages
+The mobile application's source code is not part of this repository.
 
 ## Run locally
 
-You will need Node.js 22.13 or newer.
+Node.js **22.13 or newer** is recommended.
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+Create a production build with:
 
 ```bash
 npm run build
 ```
 
-The static site is generated in `dist/`, ready to be deployed to Cloudflare Pages.
+The generated static site is written to `dist/` and deployed on Cloudflare Pages.
 
-## Current status
+## Status
 
-The landing page is live and the mobile app is still in active development. The website will keep changing as NHub gets closer to a proper release.
+The landing page is live. NHub itself is still in active development, so the site will keep evolving alongside the app.
